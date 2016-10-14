@@ -10,5 +10,5 @@ steps:
   Unit:
     image: ${{build-prj}}
     commands:
-        - npm test
+        - echo $(date)
 
