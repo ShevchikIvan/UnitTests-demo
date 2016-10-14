@@ -1,14 +1,14 @@
 version: '1.0'
 
 steps:
-  build-prj:
+  build-prj-name:
     type: build
     description: codefresh example
     image-name: codefreshexamples/expressangular
     dockerfile: Dockerfile
     tag: latest
-  Unit:
-    image: ${{build-prj}}
+  Unit-tests:
+    image: ${{build-prj-name}}
     commands:
         - echo $(date)
 
