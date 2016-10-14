@@ -7,3 +7,8 @@ steps:
     image-name: codefreshexamples/expressangular
     dockerfile: Dockerfile
     tag: latest
+  Unit:
+    image: ${{build-prj}}
+    commands:
+        - npm test
+
